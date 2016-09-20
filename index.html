@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Stefan | Digital Designer</title>
+		<link rel="icon" href="./assets/images/logo.ico">
+		<!-- Load bootstrap stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+		<!-- Load local css -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
+		<!-- Load jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- Load angular -->
+		<script type="text/javascript" src="./assets/js/angular.min.js"></script>
+		<!-- Load bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<section class="background">
+			<div id="about" class="statellite" >
+				<p id="about_button" class="button" onclick="toggleFade('about');toggleAbout();">
+				About
+				<hr id= "abt_line" align="center">
+				</p>
+				<div id="about_text">
+					<div class="portrait">
+						<img src="./assets/images/me.jpg">
+						<h2 class='portrait_text'>
+						STEFAN STANCU
+						</h2>
+						<p class='portrait_text'>289-400-8942</p>
+						<div style="text-align:left;"><a href="mailto:stefan.stancu15@gmail.com" class="portrait_text" style="text-decoration:none;">stefan.stancu15@gmail.com</a></div>
+						<div class='portrait_text' style="padding-top:25px;">
+							<div style="position:absolute;">
+								<img src="./assets/images/github.png" width="50px" height="auto">
+								<a href="http://github.com/stefanstancu" style="text-decoration:none;">GitHub</a>
+							</div>
+							<div style="position:relative; float:right;">
+								<img src="./assets/images/linkedin.png" width="50px" height="auto">
+								<a href="http://www.linkedin.com/in/stefan-stancu" style="text-decoration:none;">LinkedIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<h1 style="text-align: left;padding-bottom:20px;">I like code.</h1>
+					<p class="p_text">I am a student web developer based in Toronto studying computer engineering.</p>
+					<br>
+					<p class="p_text">Web development is a long-time passion of mine, and I love undertaking new challenges which push the limits of HTML, CSS, and Javascript.</p>
+					<br>
+					<p class="p_text">My ethos is that simple is better, especially when it comes to design. When working on a project, I prioritize clear and frequent communication with the client over anything else.</p>
+					<br>
+					<p class="p_text">If you have a project that requires a developer, get in touch.</p>
+				</div>
+			</div>
+			<div id="nm_wrap" class="name_wrapper">
+				<div id="first_name" class="name">STEFAN</div>
+				<div id="last_name" class="name">STANCU</div>
+				<div id="sub">
+					<hr id="topline" style="margin-bottom: 10px;">
+					<p id="sub_words">Digital Designer</p>
+				</div>
+			</div>
+			<img id="center_image" src="assets/images/header_background_1.png" height=50% align="middle" style="z-index:1;">
+			<div id="projects" class="statellite">
+				<div id="projects_text" ng-app="portfolio" style="z-index:1;"> 
+				<div ng-controller="carouselCtrl" id="slides_control">
+					<div>
+						<carousel links="links"></carousel>
+					</div>
+				</div>
+				</div>
+				<hr id= "prj_line" align="center">
+				<p class="button" id="projects_button" onclick="toggleFade('projects');toggleProjects();">
+				Projects
+				</p>
+			</div>
+		</section>
+		<!-- Load the local scripts -->
+		<script type="text/javascript" src="./assets/js/transitions.js"></script>
+		<script type="text/javascript" src="./assets/js/fade.js"></script>	
+		<script type="text/javascript" src="./assets/js/app.js"></script>
+	</body>
+</html>
