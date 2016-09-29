@@ -26,25 +26,25 @@
 		
 		$scope.links=[
 			{ 
-				src:"assets/images/cockadoodle.png",
+				src:"./assets/images/cockadoodle.png",
 				alt:"",
 				caption:"Cockadoodle: An anonymous Chat Service",
 				url:"https://github.com/stefanstancu/Cockadoodle"
 			},
      		{ 
-     			src:"assets/images/cockadoodle_login.png",
+     			src:"./assets/images/cockadoodle_login.png",
      			alt:"",
      			caption:"",
      			url:"https://github.com/stefanstancu/Cockadoodle"
      		},
      		{ 
-     			src:"assets/images/krispykremesales.png",
+     			src:"./assets/images/krispykremesales.png",
      			alt:"",
      			caption:"Sales Tracker: Custom Software for WOSS Mutual",
      			url:"https://github.com/stefanstancu/Sales-Software"
      		},
      		{
-     			src:"assets/images/excelsheet_printout.png",
+     			src:"./assets/images/excelsheet_printout.png",
      			alt:"",
      			caption:"Sale Tracker Excel printout",
      			url:"https://github.com/stefanstancu/Sales-Software"
