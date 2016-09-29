@@ -214,9 +214,6 @@ function topDownRevealAnimation(id, duration){
 	var element=document.getElementById(id);
 	var prevHeight = element.style.height;
 	element.style.height = 'auto';
-	if(element.style.height>screen.height){
-		element.style.height = screen.height;
-	}
 	var endHeight = getComputedStyle(element).height;
 	element.style.height = prevHeight;
 	element.offsetHeight;
