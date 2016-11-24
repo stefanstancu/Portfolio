@@ -1,2 +1,2 @@
-# Portfolio
+# Stefan Stancu
 A minimalistic portfolio.
